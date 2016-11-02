@@ -7,6 +7,7 @@
 set nocompatible  
 
 " Pathogen -- easy plugin installation
+runtime bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
 
 " Enable filetype plugins

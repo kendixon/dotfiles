@@ -1,0 +1,6 @@
+[submodule ".vim/bundle/vim-pathogen"]
+	path = .vim/bundle/vim-pathogen
+	url = https://github.com/tpope/vim-pathogen
+[submodule ".vim/bundle/syntax"]
+	path = .vim/bundle/syntax
+	url = https://github.com/octol/vim-cpp-enhanced-highlight.git
