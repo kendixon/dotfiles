@@ -1,0 +1,5 @@
+# 
+# vim
+#
+# Ignore network read/write file
+.vim/.netrwhist
