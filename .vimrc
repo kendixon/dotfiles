@@ -43,6 +43,14 @@ set hlsearch    " enable highlighting
 autocmd BufNewFile,BufRead *.{tex,txt} setlocal spell
 hi clear SpellBad
 hi Spellbad cterm=underline,bold
+" In Makefiles, don't expand tabs to spaces (need actual tab characters)
+" needed, and have indentation at 8 chars to distinguish from non-tab
+" indents
+"  tabstop: how many columns a tab character counts for
+"  shiftwidth: how many columns an indent is (>> or <<)
+"  noexpandtab: don't expand tabs to spaces
+"  softtabstop: how many columns vim uses when you hit tab
+autocmd FileType make set noexpandtab tabstop=4 shiftwidth=4 softtabstop=4
 
 " Markdown
 au BufRead,BufNewFile *.md setlocal textwidth=80
