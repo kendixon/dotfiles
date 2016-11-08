@@ -40,9 +40,10 @@ set ignorecase  " case insensitive
 set hlsearch    " enable highlighting
 
 " Spell Check (only for tex, txt)
-autocmd BufNewFile,BufRead *.{tex,txt} setlocal spell
+autocmd BufNewFile,BufRead *.{md,tex,txt} setlocal spell
 hi clear SpellBad
 hi Spellbad cterm=underline,bold
+
 " In Makefiles, don't expand tabs to spaces (need actual tab characters)
 " needed, and have indentation at 8 chars to distinguish from non-tab
 " indents
