@@ -16,12 +16,13 @@ filetype plugin on
 " Visual
 syntax on                        " enable syntax highlighting
 set background=dark              " dark background
-"colorscheme default              " default colorscheme
-let g:solarized_termcolors=256   " make solarized work without changing Terminal.app
+let g:solarized_termcolors=256   " make solarized work w/o changing Terminal.app
 colorscheme solarized            " solarized colorscheme
 set ruler                        " row/column info at lower-right 
 set t_Co=256                     " 256 colors
 set number                       " line numbers
+set textwidth=80                 " set text width
+set colorcolumn=+1               " put visual marker at textwidth+1 
 
 " Shortcuts
 set expandtab    " Turn tabs to spaces
