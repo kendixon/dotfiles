@@ -35,6 +35,8 @@ set sidescrolloff=5  " columns
 
 " Indentation (number of characters to move text using >> or <<)
 set shiftwidth=4
+set autoindent
+set smartindent
 
 " Searching
 set ignorecase  " case insensitive
