@@ -6,6 +6,9 @@
 " Compatibility mode (keep at top; will change settings away from vi defaults)
 set nocompatible  
 
+" Set backspace to behave as expected (start,eol,indent)
+set backspace=2 
+
 " Pathogen -- easy plugin installation
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
