@@ -63,11 +63,12 @@ autocmd FileType make set noexpandtab tabstop=4 shiftwidth=4 softtabstop=4
 au BufRead,BufNewFile *.md setlocal textwidth=80
 
 " Disable arrow key navigation
-inoremap  <Up>     <NOP>
-inoremap  <Down>   <NOP>
-inoremap  <Left>   <NOP>
-inoremap  <Right>  <NOP>
-noremap   <Up>     <NOP>
-noremap   <Down>   <NOP>
-noremap   <Left>   <NOP>
-noremap   <Right>  <NOP>
+" I like the mouse scroll, so not turning this off yet...
+" inoremap  <Up>     <NOP>
+" inoremap  <Down>   <NOP>
+" inoremap  <Left>   <NOP>
+" inoremap  <Right>  <NOP>
+" noremap   <Up>     <NOP>
+" noremap   <Down>   <NOP>
+" noremap   <Left>   <NOP>
+" noremap   <Right>  <NOP>
