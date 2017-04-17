@@ -62,6 +62,11 @@ autocmd FileType make set noexpandtab tabstop=4 shiftwidth=4 softtabstop=4
 " Markdown
 au BufRead,BufNewFile *.md setlocal textwidth=80
 
+" Show some characters, but no spaces since it gets all spaces, not just leading
+" "set listchars=eol:¬,tab:>>,trail:~,extends:>,precedes:<,space:·
+set listchars=eol:¬,tab:>>,trail:~,extends:>,precedes:<
+set list
+
 " Disable arrow key navigation
 " I like the mouse scroll, so not turning this off yet...
 " inoremap  <Up>     <NOP>
