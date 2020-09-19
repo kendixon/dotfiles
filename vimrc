@@ -16,6 +16,8 @@ filetype plugin on
 syntax on                        " enable syntax highlighting
 set background=dark              " dark background
 colorscheme one                  " one colorscheme
+" let g:solarized_termcolors=256
+" colorscheme solarized
 set ruler                        " row/column info at lower-right
 set t_Co=256                     " 256 colors
 set number                       " line numbers
