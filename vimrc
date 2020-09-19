@@ -38,8 +38,8 @@ set sidescrolloff=5  " columns
 
 " Indentation (number of characters to move text using >> or <<)
 set shiftwidth=4
-set autoindent
-set smartindent
+" set autoindent
+" set smartindent
 
 " Searching
 set ignorecase  " case insensitive
@@ -62,18 +62,28 @@ autocmd FileType make set noexpandtab tabstop=4 shiftwidth=4 softtabstop=4
 " Markdown
 au BufRead,BufNewFile *.md setlocal textwidth=80
 
-" Show some characters, but no spaces since it gets all spaces, not just leading
-" "set listchars=eol:¬,tab:>>,trail:~,extends:>,precedes:<,space:·
-set listchars=eol:¬,tab:>>,trail:~,extends:>,precedes:<
-set list
+" Status line
+set laststatus=2
 
-" Disable arrow key navigation
-" I like the mouse scroll, so not turning this off yet...
-" inoremap  <Up>     <NOP>
-" inoremap  <Down>   <NOP>
-" inoremap  <Left>   <NOP>
-" inoremap  <Right>  <NOP>
-" noremap   <Up>     <NOP>
-" noremap   <Down>   <NOP>
-" noremap   <Left>   <NOP>
-" noremap   <Right>  <NOP>
+" Enable mouse support
+set mouse+=a
+
+" Enable search-as-you-type
+set incsearch
+
+" CtrlP Settings
+" See: https://github.com/ctrlpvim/ctrlp.vim/blob/master/readme.md#basic-options
+let g:ctrlp_map = '<c-p>'    " Map CtrlP to Ctrl+P
+let g:ctrlp_cmd = 'CtrlP'
+
+" Prevent arrow key usage
+" Do this in normal mode...
+nnoremap <Left>  :echoe "Use h"<CR>
+nnoremap <Right> :echoe "Use l"<CR>
+nnoremap <Up>    :echoe "Use k"<CR>
+nnoremap <Down>  :echoe "Use j"<CR>
+" ...and in insert mode
+inoremap <Left>  <ESC>:echoe "Use h"<CR>
+inoremap <Right> <ESC>:echoe "Use l"<CR>
+inoremap <Up>    <ESC>:echoe "Use k"<CR>
+inoremap <Down>  <ESC>:echoe "Use j"<CR>
