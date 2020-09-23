@@ -20,6 +20,8 @@ alias mv="mv -i"
 alias df="df -h"
 alias mkdir="mkdir -p"
 alias tmux="tmux -2"
+alias gs="git status"
+alias gc="git commit"
 
 # Homebrew
 export HOMEBREW_EDITOR=vim
