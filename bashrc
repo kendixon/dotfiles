@@ -22,6 +22,7 @@ alias mkdir="mkdir -p"
 alias tmux="tmux -2"
 alias gs="git status"
 alias gc="git commit"
+alias gl="git log --decorate --graph --all"
 
 # Homebrew
 export HOMEBREW_EDITOR=vim
