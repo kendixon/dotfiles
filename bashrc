@@ -27,3 +27,10 @@ alias gl="git log --decorate --graph --all"
 # Homebrew
 export HOMEBREW_EDITOR=vim
 export HOMEBREW_FORMULA=/usr/local/Library/Formula
+
+# Python (pyenv)
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
+eval "$(pyenv init -)"
+#export PYENV_VERSION="3.9.6"
